@@ -1,0 +1,27 @@
+{
+  "name": "turborepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check":"turbo run test typecheck",
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "graph": "npx turbo run build --graph",
+    "info":"npx turbo build --dry",
+    "dev:utils": "turbo run dev --filter=@turborepo/utils",
+    "dev:dashboard": "turbo run dev --filter=@turborepo/dashboard",
+    "dev:blog": "turbo run dev --filter=@turborepo/blog"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "devDependencies": {
+    "turbo": "^1.6.3"
+  }
+}

@@ -17,7 +17,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
-          {/* <Button >Hello next</Button> */}
+          <Button >Hello next</Button>
           <p>
             Get started by editing&nbsp;
             <code className={styles.code}>pages/index.js</code>

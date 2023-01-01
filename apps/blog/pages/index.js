@@ -6,7 +6,7 @@ import { Button } from '@turborepo/utils';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export default function Home() {
+export default function Home({ data }) {
   return (
     <>
       <Head>
@@ -17,7 +17,9 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
-          <Button >Hello next</Button>
+          {JSON.stringify(data)}
+          {console.log(JSON.stringify(data))}
+          <Button>{JSON.stringify(data)}</Button>
           <p>
             Get started by editing&nbsp;
             <code className={styles.code}>pages/index.js</code>
@@ -115,4 +117,16 @@ export default function Home() {
       </main>
     </>
   );
+}
+
+// call get api from backend workspace
+export async function getServerSideProps() {
+  const res = await fetch('http://localhost:5000/');
+  const { message } = await res.json();
+
+  return {
+    props: {
+      data: message,
+    },
+  };
 }

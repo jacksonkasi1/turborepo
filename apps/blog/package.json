@@ -6,16 +6,22 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint src/**/*.{js,jsx,ts,tsx,json}",
+    "lint:fix": "eslint --fix src/**/*.{js,jsx,ts,tsx,json}",
+    "format": "prettier --write \"{pages,components}/**/*.{js,jsx,ts,tsx,css,md,json,scss}\" --config .prettierrc"
   },
   "dependencies": {
     "@next/font": "13.1.1",
     "@turborepo/utils": "^1.0.0",
-    "eslint": "8.30.0",
     "eslint-config-next": "13.1.1",
     "next": "13.1.1",
     "next-transpile-modules": "^10.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.31.0",
+    "eslint-plugin-react": "^7.31.11",
+    "prettier": "2.8.1"
   }
 }

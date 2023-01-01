@@ -8,7 +8,7 @@
     "dev": "turbo run dev",
     "build": "turbo run build",
     "graph": "npx turbo run build --graph",
-    "info":"npx turbo build --dry",
+    "info": "npx turbo build --dry",
     "dev:utils": "turbo run dev --filter=@turborepo/utils",
     "dev:dashboard": "turbo run dev --filter=@turborepo/dashboard",
     "dev:blog": "turbo run dev --filter=@turborepo/blog"
@@ -21,6 +21,12 @@
     "libs/*"
   ],
   "devDependencies": {
+    "eslint": "^8.31.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "turbo": "^1.6.3"
   }
 }

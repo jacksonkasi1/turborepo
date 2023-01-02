@@ -1,0 +1,9 @@
+services:
+- name: blog
+  buildFilter:
+    paths:
+    - app/blog/**
+- name: dashboard
+  buildFilter:
+    paths:
+    - app/dashboard/**

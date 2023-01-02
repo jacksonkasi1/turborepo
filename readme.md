@@ -8,8 +8,7 @@
 module parse failed: unexpected token you may need an appropriate loader to handle this file type.
 ```
 
-https://stackoverflow.com/a/74105962/19867724
+https://stackoverflow.
 
----
-
-2) 
+--- render ---
+- https://render.com/docs/monorepo-support

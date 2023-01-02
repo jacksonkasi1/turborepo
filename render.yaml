@@ -1,9 +1,11 @@
 services:
 - name: blog
+  type: web
   buildFilter:
     paths:
     - app/blog/**
 - name: dashboard
+  type: web
   buildFilter:
     paths:
     - app/dashboard/**

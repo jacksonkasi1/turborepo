@@ -1,11 +1,19 @@
 services:
 - name: blog
   type: web
+  env: static
   buildFilter:
     paths:
     - app/blog/**
 - name: dashboard
   type: web
+  env: static
   buildFilter:
     paths:
     - app/dashboard/**
+- name: backend
+  type: web
+  env: node
+  buildFilter:
+    paths:
+    - app/backend/**

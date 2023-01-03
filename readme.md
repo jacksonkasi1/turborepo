@@ -14,16 +14,17 @@ https://stackoverflow.com/a/74105962/19867724
 
 2)
 
+---
 
---- render ---
+## --- render ---
 
 https://render.com/docs/monorepo-support ( just info: it's for mono repo )
 
---- state management ---
-## zustand
+## --- state management ---
+### zustand
 - https://zustand-demo.pmnd.rs/
 
---- live deploy links ---
+## --- live deploy links ---
 
 - https://turborepo-dashboard.vercel.app
 - https://turborepo-blog-blue.vercel.app

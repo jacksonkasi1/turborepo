@@ -27,4 +27,4 @@ https://render.com/docs/monorepo-support ( just info: it's for mono repo )
 ## --- live deploy links ---
 
 - https://turborepo-dashboard.vercel.app
-- https://turborepo-blog-blue.vercel.app
+- https://turborepo-blog-pi.vercel.app

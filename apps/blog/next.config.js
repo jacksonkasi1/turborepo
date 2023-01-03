@@ -4,6 +4,6 @@ const nextConfig = {
   swcMinify: true,
 };
 
-const withTranspilation = require('next-transpile-modules')(['@turborepo/utils']);
+const withTranspilation = require('next-transpile-modules')(['@turborepo/utils', 'demo']);
 
 module.exports = withTranspilation(nextConfig);

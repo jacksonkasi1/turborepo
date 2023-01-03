@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Inter } from '@next/font/google';
 import styles from '../styles/Home.module.css';
 import { Button } from '@turborepo/utils';
+import {Counter} from "demo"
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -20,6 +21,7 @@ export default function Home({ data }) {
           {JSON.stringify(data)}
           {console.log(JSON.stringify(data))}
           <Button>{JSON.stringify(data)}</Button>
+          <Counter />
           <p>
             Get started by editing&nbsp;
             <code className={styles.code}>pages/index.js</code>

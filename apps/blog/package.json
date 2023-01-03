@@ -13,6 +13,7 @@
   "dependencies": {
     "@next/font": "13.1.1",
     "@turborepo/utils": "^1.0.0",
+    "demo":"*",
     "eslint-config-next": "13.1.1",
     "next": "13.1.1",
     "next-transpile-modules": "^10.0.0",
